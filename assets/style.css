@@ -1071,3 +1071,63 @@ main, body { min-height: 100vh; }
 section[data-tab]:not(#home) { min-height: calc(100vh - 72px - 260px); }
 #people, #research, #tutorials, #join, #contact { padding-top: calc(72px + 4rem); }
 #publications { padding-top: 5rem; }
+
+/* ── blog ── */
+#blog { padding-top: calc(72px + 4rem); }
+.blog-card { display: block; color: inherit; }
+.blog-card:hover { border-color: var(--green-accent); }
+.blog-more { color: var(--green-accent); }
+.post { max-width: 700px; margin: 0 auto; padding: calc(72px + 3.5rem) 1.25rem 4rem; }
+.post-back { font-size: .85rem; color: var(--green-accent); font-weight: 600; }
+.post h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; color: var(--green-deep); margin: 1rem 0 .75rem; }
+.post-meta { font-size: .85rem; color: var(--ink-faint); margin-bottom: 2rem; }
+.post h2 { font-family: var(--serif); font-size: 1.6rem; color: var(--green-deep); margin: 2.25rem 0 .5rem; }
+.post p, .post li { font-size: 1.05rem; color: #2b3a31; line-height: 1.8; margin-bottom: 1rem; }
+.post ul, .post ol { padding-left: 1.25rem; margin-bottom: 1rem; }
+.post .lede { font-size: 1.2rem; color: var(--ink-muted); }
+.keybox { background: var(--green-light); border-left: 4px solid var(--green-accent); border-radius: 8px; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+.keybox p { margin: 0; }
+.keybox strong { color: var(--green-deep); }
+.post-end { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.5rem; font-size: .95rem; color: var(--ink-muted); }
+.post-fig { margin: 2rem 0; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.post-fig svg { width: 100%; height: auto; display: block; }
+.post-fig figcaption { font-size: .85rem; color: var(--ink-faint); text-align: center; margin-top: .5rem; }
+/* ── Bangla posts ── */
+.bn .post p, .bn .post li { font-family: 'Hind Siliguri', var(--sans); font-size: 1.12rem; line-height: 1.95; }
+.bn .post h1, .bn .post h2 { font-family: 'Noto Serif Bengali', var(--serif); line-height: 1.45; }
+.bn .post h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.bn .post h2 { font-size: 1.4rem; }
+.series-tag { display: inline-block; margin-top: 1.25rem; background: var(--gold-light); color: var(--gold-dark); padding: .2rem .7rem; border-radius: 4px; font-size: .85rem !important; font-weight: 600; }
+.blog-card.bn h3 { font-family: 'Noto Serif Bengali', var(--serif); line-height: 1.5; }
+.blog-card.bn p { font-family: 'Hind Siliguri', var(--sans); font-size: .95rem; }
+.series-tag { display: table; }
+/* ── post v2: photos ── */
+.post-hero { position: relative; margin-top: 72px; height: min(62vh, 560px); overflow: hidden; background: #0f1a13; }
+.post-hero img { width: 100%; height: 100%; object-fit: cover; opacity: .72; }
+.post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,15,.92) 0%, rgba(10,22,15,.2) 60%, transparent); }
+.post-hero-text { position: absolute; left: 0; right: 0; bottom: 2.75rem; max-width: 760px; margin: 0 auto; padding: 0 1.25rem; z-index: 1; }
+.post-hero-text h1 { color: #fff !important; margin: .75rem 0 .5rem !important; }
+.post-hero-text .post-meta { color: rgba(255,255,255,.75); margin: 0; }
+.post-hero .credit { position: absolute; right: 1rem; bottom: .6rem; z-index: 1; color: rgba(255,255,255,.6); margin: 0; }
+.post-hero .credit a { color: rgba(255,255,255,.8); }
+.post-hero + .post { padding-top: 2.5rem; }
+.credit { font-size: .75rem !important; color: var(--ink-faint) !important; line-height: 1.5 !important; }
+.credit a, .post-photo figcaption a, .sources a { text-decoration: underline; text-underline-offset: 2px; }
+.post-photo { margin: 1.5rem 0 2rem; }
+.post-photo img { width: 100%; max-height: 460px; object-fit: cover; border-radius: 6px; }
+.post-photo figcaption { font-size: .78rem; color: var(--ink-faint); margin-top: .5rem; font-family: 'Hind Siliguri', var(--sans); }
+.laureates { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0 .4rem; }
+.laureate { display: flex; align-items: center; gap: .9rem; padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: 8px; font-family: 'Hind Siliguri', var(--sans); font-size: .95rem; color: var(--ink-muted); line-height: 1.5; }
+.laureate strong { color: var(--green-deep); font-size: 1.05rem; }
+.initials { flex: 0 0 52px; height: 52px; border-radius: 50%; background: var(--green-deep); color: var(--gold); display: grid; place-items: center; font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+.pull { font-family: 'Noto Serif Bengali', var(--serif); font-size: 1.55rem; line-height: 1.6; color: var(--green-deep); border-left: 3px solid var(--gold); padding: .25rem 0 .25rem 1.5rem; margin: 2.5rem 0; }
+.post-fig { border: none; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); border-radius: 0; padding: 1.5rem 0; }
+.sources { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.sources h3 { font-size: .8rem; letter-spacing: .1em; color: var(--ink-faint); margin-bottom: .5rem; }
+.sources li { font-size: .85rem !important; line-height: 1.6 !important; color: var(--ink-muted); margin-bottom: .3rem !important; }
+@media (max-width: 600px) { .laureates { grid-template-columns: 1fr; } .post-hero .credit { left: 1rem; } }
+.blog-card.has-img { padding: 0; overflow: hidden; }
+.blog-card.has-img > *:not(img) { margin-left: 1.5rem; margin-right: 1.5rem; }
+.blog-card.has-img > .blog-tag { margin-top: 1.25rem; }
+.blog-card.has-img > .blog-more { display: inline-block; margin-bottom: 1.5rem; }
+.blog-thumb { width: 100%; height: 190px; object-fit: cover; }
