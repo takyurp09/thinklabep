@@ -1062,3 +1062,12 @@ a { text-decoration: none; color: inherit; }
 .form-note { color: var(--ink-faint); }
 @media (max-width: 900px) { #tutorials .research-grid { grid-template-columns: 1fr !important; } }
 .contact-text .contact-label { margin-bottom: 0.15rem; }
+
+/* ── tabs ── */
+section[hidden] { display: none !important; }
+.nav-links a.active:not(.nav-cta) { color: var(--green-deep); background: var(--green-light); }
+.mobile-menu a.active { color: var(--green-deep); font-weight: 600; }
+main, body { min-height: 100vh; }
+section[data-tab]:not(#home) { min-height: calc(100vh - 72px - 260px); }
+#people, #research, #tutorials, #join, #contact { padding-top: calc(72px + 4rem); }
+#publications { padding-top: 5rem; }
