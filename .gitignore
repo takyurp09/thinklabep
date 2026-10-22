@@ -1,0 +1,14 @@
+# Big or working files that should not be published
+*.mp4
+*.mov
+*.pptx
+*.pdf
+.DS_Store
+
+# Drafts and helper scripts
+blog/facebook-captions.md
+patch*.py
+/logo.png
+
+# Local preview config
+.claude/
