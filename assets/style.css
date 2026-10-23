@@ -1224,3 +1224,10 @@ section[data-tab]:not(#home)#blog, section[data-tab]:not(#home)#subscribe { min-
 .yt-facade { aspect-ratio: 2 / 1; overflow: hidden; }
 .yt-facade .yt-play, .series-thumb .yt-play { left: 1.25rem; top: auto; bottom: 1.25rem; transform: none; }
 .yt-facade:hover .yt-play, .series-thumb:hover .yt-play { transform: scale(1.08); }
+/* Three laureates side by side (Nobel series part 3) */
+.laureate-img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: 0 0 64px; }
+.laureates-3 { grid-template-columns: repeat(3, 1fr); }
+.laureates-3 .laureate { flex-direction: column; align-items: flex-start; gap: .6rem; font-size: .9rem; }
+@media (max-width: 760px) { .laureates-3 { grid-template-columns: 1fr; } .laureates-3 .laureate { flex-direction: row; align-items: center; } }
+/* Blog post top bar on phones: keep links on one line */
+@media (max-width: 480px) { .nav-links a { white-space: nowrap; } .nav-inner:has(.nav-links[style]) .nav-brand-text { display: none; } }

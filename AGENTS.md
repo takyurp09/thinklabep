@@ -21,7 +21,7 @@ Read this before changing anything in this folder.
 - A new section must have `data-tab`. An extra section inside a tab (like `#latest` or `#subscribe`) must come directly after another section of the same tab, or the scroll-to-section link won't work.
 
 ### assets/style.css
-- After changing the CSS, bump the cache version `style.css?v=N` in `index.html` **and** in every `blog/*.html`. It is currently `v=3`.
+- After changing the CSS, bump the cache version `style.css?v=N` in `index.html` **and** in every `blog/*.html`. It is currently `v=4`.
 - The rule `section[data-tab]:not(#home)` sets a min-height. Overriding it needs higher specificity (see the `#blog` / `#subscribe` rule near the end of the file).
 
 ### blog/
